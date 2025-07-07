@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lison's portfolio</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/build/tailwind.css">
+    <script>
+        window.addEventListener('wheel', function (e) {
+            if (e.deltaY !== 0) {
+            e.preventDefault();
+            window.scrollBy({
+                left: e.deltaY,
+                behavior: 'smooth'
+            });
+            }
+        }, { passive: false });
+    </script>
+</head>
+<body class="relative overflow-x-scroll overflow-y-hidden w-[4350px] h-screen bg-seashellMilk">
+    <img src="./images/photography/cousin_s_portrait.jpg" class="absolute top-0 left-0 w-[550px] h-[730px]"/>
+    <h1 class="font-kode font-bold text-fadedTerra text-[50px] absolute top-10 left-[580px] [writing-mode:vertical-rl] [text-orientation:upright]">
+        PHOTO
+    </h1>
+    <img src="./images/photography/exercise/Copernic_s_hall.jpg" class="absolute top-0 left-[680px] w-[319px] h-[566px]"/>
+    <img src="./images/photography/exercise/Silence.jpg" class="absolute bottom-0 left-[1040px] w-[319px] h-[566px]"/>
+    <img src="./images/photography/exercise/Hirono_object_photo.jpg" class="absolute top-0 left-[1400px] w-[319px] h-[566px]"/>
+    <div class="absolute bottom-[60px] left-[347px] w-[307px] h-[203px] bg-deepHarbor">
+        <p class="font-kode font-medium text-seashellMilk text-[17px] p-3 text-justify">
+            I love taking photos as a hobby, mst likely in vacations, but I also experimented with some photo classes ! In this protrait, it is a family member.
+        </p>
+    </div>
+    <p class="font-kode font-medium text-fadedTerra text-[17px] text-justify absolute bottom-10 left-[700px] w-[270px]">
+        This is an exercise at architecture and motion blur that I am particularly proud of.
+    </p>
+    <p class="font-kode font-medium text-deepHarbor text-[17px] text-justify absolute top-7 left-[1060px] w-[270px]">
+        This photo is a test where we had to ‘illustrate’ a generated poem on internet. This one was about silence.
+    </p>
+    <p class="font-kode font-medium text-fadedTerra text-[17px] text-justify absolute bottom-10 left-[1420px] w-[270px]">
+        Here I had to do an object photo. I chose this figure because I wanted to try some visual storytelling.
+    </p>
+    <img src="./images/photography/exhibit/Blanc_first_try.jpg" class="absolute top-[114px] left-[1800px] w-[336px] h-[509px]"/>
+    <img src="./images/photography/arrow.svg" class="absolute top-[289px] left-[2135px]"/>
+    <img src="./images/photography/exhibit/Blank.JPG" class="absolute top-0 left-[2384px] w-[414px] h-[737px]"/>
+    <h2 class="font-kode font-semibold text-deepHarbor text-[32px] absolute top-10 left-[1830px]">The first try</h2>
+    <h2 class="font-kode font-semibold text-deepHarbor text-[32px] absolute bottom-10 left-[2100px]">The last take</h2>
+    <div class="absolute top-[22px] left-[2750px] w-[240px] h-[66px] bg-fadedTerra flex flex-row justify-center">
+        <h2 class="font-kode font-semibold text-seashellMilk text-[40px] pt-1">BLANK</h2>
+    </div>
+    <p class="font-kode font-medium text-deepHarbor text-[17px] text-justify absolute top-[115px] left-[2820px] w-[450px]">
+        This portrait was taken to be exhibited for 2 weeks in the university’s hall as part of the photography course. I took a first photo in the first class that I wanted to work on as I really liked the idea. Then, I asked two other class comrades to pose for me and I directed them on their pose. 
+        <br>In the foreground, there is a woman looking thoughtfully at us, but we cannot tell what she is feeling : I wanted her to feel mysterious.
+        <br>Behind her, the other woman is looking at us for her height, intimidating :she is angry but she tries to hide it.
+        <br>The white sheet seems organized and clean in the background, but as you lower your gaze, you can see that it is becoming jumbled : are they hiding a secret, or a somber backstory ? Finally, I kept the shadow of the standing woman, looming on the sheet, as if there was a ghost trying to retake its place in the photo...
+    </p>
+    <img src="./images/photography/landscape/snow_arbor.jpg" class="absolute top-[223px] right-[50px] w-[576px] h-[432px]"/>
+    <img src="./images/photography/landscape/snow_lake.JPEG" class="absolute top-[66px] right-[350px] w-[435px] h-[326px]"/>
+    <img src="./images/photography/landscape/isle_of_Skye.JPG" class="absolute top-[392px] right-[500px] w-[568px] h-[320px]"/>
+    <div class="absolute top-[133px] right-[750px] w-[213px] h-[293px] bg-fadedTerra flex flex-row justify-center">
+        <h2 class="font-kode font-semibold text-seashellMilk text-[31px] text-center py-2 px-5">
+            These are landscape photos from some journeys !
+        </h2>
+    </div>
+    <div class="absolute top-5 right-5 transition-transform duration-300 hover:scale-110">
+        <a href="./choose_page_pf.html"> 
+            <img src="./images/photography/home_button.svg"/>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lison's portfolio</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/build/tailwind.css">
+    <script>
+        window.addEventListener('wheel', function (e) {
+            if (e.deltaY !== 0) {
+            e.preventDefault();
+            window.scrollBy({
+                left: e.deltaY,
+                behavior: 'smooth'
+            });
+            }
+        }, { passive: false });
+    </script>
+</head>
+<body class="relative overflow-x-scroll overflow-y-hidden w-[4150px] h-screen bg-morningClay">
+    <div class="absolute top-5 left-5 w-[600px] flex flex-row justify-between">
+        <img src="./images/3D/lighting/golden_bay_1.png" class="w-[184px] h-[184px]"/>
+        <img src="./images/3D/lighting/lighting_2_rim_light.png" class="w-[184px] h-[184px]"/>
+        <img src="./images/3D/lighting/lighting_5_tour.png" class="w-[184px] h-[184px]"/>
+    </div>
+    <div class="absolute top-[220px] left-5 w-[600px] h-[80px] flex flex-row justify-center bg-pineBlack">
+        <h1 class="font-kode font-bold text-paleMoss text-[50px]">3D ART</h1>
+    </div>
+    <div>
+        <img src="./images/3D/Switch/switch.png" class="absolute bottom-5 left-[650px] w-[737px] h-[415px]"/>
+        <img src="./images/3D/Switch/compositing/compositing_2.png" class="absolute bottom-7 left-[400px] w-[324px] h-[182px]"/>
+        <img src="./images/3D/Switch/compositing/compositing_1.png" class="absolute top-[100px] left-[1000px] w-[470px] h-[264px]"/>
+    </div>
+    <h2 class="font-kode font-semibold text-paleMoss text-[32px] absolute top-[400px] left-[420px]">
+        BLENDER
+    </h2>
+    <p class="font-kode font-medium text-pineBlack text-[17px] text-justify absolute top-[500px] left-5 w-[301px]">
+        I am currently working to improve my skills in 3D Modelling on Blender. Just beside there is a try at modelling and and compositing with a Nintendo switch.
+    </p>
+    <p class="font-kode font-medium text-pineBlack text-[17px] text-justify absolute top-[60px] left-[650px] w-[301px]">
+        These are tests on how to use lighting and HDRIs on a Tower Chess piece.
+    </p>
+    <video class="absolute top-7 left-[1700px] w-[808px] h-[454px]" autoplay loop muted playsinline>
+        <source src="./images/3D/velocitimac/airship_and_dragon_animation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="absolute top-[430px] left-[1500px] w-[600px] h-[80px] bg-fogHorizon flex flex-row justify-center">
+        <h1 class="font-kode font-bold text-morningClay text-[50px]">VELOCITIMAC</h1>
+    </div>
+    <p class="font-kode font-medium text-pineBlack text-[17px] text-justify absolute bottom-7 left-[1500px] w-[1050px]">
+        This here is a school project where we had to model and animate a vehicle of our choice. After that, our professor did a montage of all our projects. 
+        <br>I chose to do a low poly airship, with a baby dragon hanging on its bow. The airship is swinging on itself due to the wind. Therefore, the dragon must balance with its wing, his tail is swinging as it is happy to play in the sky.
+        <br>I chose the low poly rendering to have a cartoonish effect, with a texturing and an HDRI for the light. Enjoy the video !
+    </p>
+    <div class="absolute top-5 left-[4000px] transition-transform duration-300 hover:scale-110">
+        <a href="./choose_page_pf.html"> 
+            <img src="./images/3D/home_button.svg"/>
+        </a>
+    </div>
+</body>
+</html>

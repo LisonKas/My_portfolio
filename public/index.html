@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lison's portfolio</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/build/tailwind.css">
+
+</head>
+<body class="bg-starNight relative">
+    <div id="clock" class="absolute top-0 w-[327px] h-[57px] p-2 mt-10 mr-[1300px] bg-blueStar font-kode text-starNight text-[32px] z-10 animate-float"></div>
+    <script>
+      function updateTime() {
+        const now = new Date();
+
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const day = now.getDate().toString().padStart(2, '0');
+        const month = (now.getMonth() + 1).toString().padStart(2, '0');
+        const year = now.getFullYear();
+
+        const formatted = `${hours}:${minutes} ${day}/${month}/${year}`;
+        document.getElementById("clock").textContent = formatted;
+      }
+
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
+    
+    <div class="absolute w-[680px] h-[424px]">
+        <svg viewBox="0 0 675 424" class="absolute top-7 left-[359px] w-[680px] h-[425px] rounded-[45px]">
+            <defs>
+            <mask id="mask">
+                <rect class="w-[675px] h-[424px] fill-white" />
+                <circle class="fill-black" r="13.5" cx="39" cy="125" />
+                <circle class="fill-black" r="13.5" cx="39" cy="290" />
+            </mask>
+            </defs>
+            <rect mask="url(#mask)" class="w-[675px] h-[424px] fill-palePink" />
+        </svg>
+        <div class="absolute top-6 left-[450px] font-kode font-bold text-[90px] text-gold">PORTFOLIO</div>
+        <div class="absolute top-[125px] left-[750px] w-[250px] font-kode font-bold text-[42px] text-gold">Welcome !</div>
+        <p class="absolute top-[180px] left-[450px] font-kode text-gold text-[19px] w-[500px] text-justify">
+            Hello, I am Lison, a 22 years old student in multimedia engineering in Paris !
+            <br>
+            I love art and stories, and I like to try new things ! So here is a little website project for you to review my work !
+            <br><br>
+            Disclaimer : this is a work in progress ! (and it works better on desktop, sorry 😳)
+        </p>
+    </div>
+    <div class="absolute top-[408px] left-[560px]">
+        <a href="./choose_page_pf.html">
+            <button class="relative transition-transform duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px]">
+                <img src="./images/portfolio_button.svg"/>
+            </button>
+        </a>
+    </div>
+    <div class="absolute bottom-0 w-[406px] h-[113px] bg-mauve">
+        <div class="font-kode text-[48px] text-gold pl-4 py-6">WHO AM I ?</div>
+        <a href="./who_am_i.html">
+            <button class="absolute bottom-6 pl-[315px] transition-transform duration-300 hover:translate-x-[4px] hover:translate-y-[-4px]">
+                <img src="images/button_about_me.svg"/>
+            </button>
+        </a>
+    </div>
+    <div class="pl-6 pb-6 pt-16">
+        <img src="./images/cover.png" alt="Cover_painting" class="w-[494px] h-[927px]"/>
+    </div>
+    <div class="absolute top-7 left-[1037px] w-[375px] h-[424px] rounded-[45px] bg-gold">
+        <img src="./images/code_barre.png" class="absolute right-5 top-10"/>
+        <img src="./images/abandoned_trail_under_the_rain.JPEG" class="absolute top-12 left-3 w-[250px] h-[320px] rounded-[25px] animate-float"/>
+    </div>
+    <div class="absolute bottom-5 left-[550px]">
+        <img src="./images/mist_lands_div.svg" class="w-[394px] h-[503px]"/>
+        <span class="absolute bottom-0 left-3 w-[150px] h-[150px] rounded-full bg-lightBlue transition-transform duration-300 hover:scale-110"></span>
+        <button class="absolute bottom-[30px] left-[40px] transition-transform duration-300 hover:translate-x-[5px] hover:translate-y-[-5px]" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+            <img src="./images/mist_lands_button.svg"/>
+        </button>
+        <h2 class="absolute font-kode text-gold text-[40px] top-5 left-7 font-bold">The Mist Lands</h2>
+        <h3 class="absolute font-kode text-gold text-[20px] top-[75px] left-7 font-semibold">A graphic novel project</h3>
+        <p class="absolute font-kode text-gold text-[18px] top-[115px] left-7 w-[340px] text-justify">In 2109, a sea of mist appears on 60% of the Pacific Ocean. The Worldwide alliance, in curisiosity, sends multiples aviators but nobody returns from the mysterious fog.</p>
+        <p class="absolute font-kode text-gold text-[17px] top-[285px] right-4 w-[160px] text-justify">9 years later, a party of soldiers, scientist and explorators are summoned to go on a long journey.</p>
+    </div>
+    <div class="absolute bottom-5 right-[345px] w-[208px] h-[503px] bg-darkPurple rounded-[45px]">
+        <h2 class="font-kode text-lightPink text-[32px] font-bold text-center px-3">Some of my Hobbies</h2>
+        <h3 class="font-kode text-lightPink text-[20px] font-bold text-center px-4">PAINTING</h3>
+        <p class="font-kode text-lightPink text-[17px] text-center px-2">I love to improve my skills in painting, either in acrylic, gouache or watercolor !</p>
+        <h3 class="font-kode text-lightPink text-[20px] font-bold text-center px-4">READING</h3>
+        <p class="font-kode text-lightPink text-[17px] pr-5 pl-1 w-[168px]">I am a big lover of fantasy, sci-fi and classic books ♥.</p>
+    </div>
+    <div class="absolute bottom-5 right-[80px] w-[240px] h-[513px] rounded-[45px]">
+        <img src="./images/In_progress.png"/>
+        <img src="./images/attache_carnet.png" class="absolute top-0 right-[35px]"/>
+    </div>
+    <div class="absolute bottom-10 right-[150px] animate-float">
+        <img src="./images/sticker.svg"/>
+        <p class="font-kode text-black text-[30px] absolute top-2 left-10">In Progress</p>
+    </div>
+</body>
+</html>
